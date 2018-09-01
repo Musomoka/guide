@@ -3,8 +3,22 @@ title: Remove Items Using splice()
 ---
 ## Remove Items Using splice()
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/javascript-algorithms-and-data-structures/basic-data-structures/remove-items-using-splice/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+<p>The solution requires that you remove an item at a time.
+  <br/>
+1. use splice to remove one of the numbers within the array
+<br/>
+2. Use either splice or pop or shift to remove any number to result in the reduce method returning a sum of 10.
+</p>
+<h3>solution</h3>
+<code>
+ function sumOfTen(arr) {
+  // change code below this line
+  arr.splice(1,1);
+  arr.pop();
+  // change code above this line
+  return arr.reduce((a, b) => a + b);
+}
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
-
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+// do not change code below this line
+console.log(sumOfTen([2, 5, 1, 5, 2, 1])); 
+ </code>
